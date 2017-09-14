@@ -1,0 +1,153 @@
+#lightbox{
+	background-color:#eee;
+	padding: 10px;
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+	}
+#lightboxDetails{
+	padding-top: 0.4em;
+  font:normal 15px Arial;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+	
+
+/** 
+ * Slideshow style rules.
+ */
+#slideshow {
+	margin-left:0px;
+	top:167px;	
+	width:843px;
+	height:203px;
+	position:absolute;
+}
+#slideshow #slidesContainer {
+  width:843px;
+  height:203px;
+  margin-left:0px;
+  /* overflow:auto; allow scrollbar */
+ 	position:absolute;
+	z-index:2;
+	margin-left:0px;
+}
+#slideshow #slidesContainer .slide {
+  width:843px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height:203px;
+  z-index:4;
+  margin-left:0px;
+	/*  margin-top:0px;	 */
+}
+
+/** 
+ * Slideshow controls style rules.
+ */
+.control {
+  display:block;
+  width:39px;
+  height:203px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   filter: alpha(opacity=50);
+   opacity: 0.5;
+}
+.controlAAN {
+  display:block;
+  width:39px;
+  height:203px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+#leftControl {
+  top:0;
+  left:0;
+  background:transparent url(../img/control_left.png) no-repeat 0 0;
+  z-index:3;
+  position:absolute;
+}
+#rightControl {
+  top:0;
+  right:-19px;
+  background:transparent url(../img/control_right.png) no-repeat 0 0;
+  z-index:3;
+  position:absolute;
+}
+
+/** 
+ * Style rules for Demo page
+ */
+
+.slide h2, .slide p {
+  margin-left:40px;
+}
+.slide h2 {
+  font:normal 15px Arial;
+  color:#ccc;
+    line-height:20px;
+}
+.slide a
+{
+	font-weight:normal;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.slide a:hover, a:visited
+{
+color:#666666;
+
+}
+#SlideImg
+{
+	margin-left:0px;
+	margin-top:0px;
+  z-index:-1;
+  overflow:hidden;
+  z-index:0;
+  position:absolute;
+}
+#SlideText
+{
+	margin-top:20px;
+	overflow:hidden;
+	width:500px;
+	position:absolute;
+	z-index:2;
+	
+font:normal 11px Arial;
+  color:#ccc;
+  line-height:20px;
+   margin-left:40px;
+}
+#SlideText a
+{
+	color:#FFA800;
+}
+#SlideText a:hover
+{
+	color:#cccccc;
+}
+#SlideText h2
+{
+	font-size:15px;
+}
