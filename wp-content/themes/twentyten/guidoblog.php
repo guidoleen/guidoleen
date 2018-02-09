@@ -8,9 +8,7 @@ include 'header.php';
 
 <center>
 <div id="content0">
-
-                
-                	<span class="leesverder"><a href="http://www.guidoleen.nl/portfolio/">NAAR PORTFOLIO</a></span>
+<span class="leesverder"><a href="http://www.guidoleen.nl/portfolio/">NAAR PORTFOLIO</a></span>
 
 <br />
                         
